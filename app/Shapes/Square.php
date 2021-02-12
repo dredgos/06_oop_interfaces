@@ -6,12 +6,12 @@ class Square implements ShapeInterface
 {
     private $length;
 
-    public function __construct($length)
+    public function __construct(float $length)
     {
         $this->length = $length;
     }
 
-    public function area()
+    public function area() : float
     {
         return $this->length * $this->length;
     }

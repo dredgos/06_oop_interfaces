@@ -7,12 +7,12 @@ class Circle implements ShapeInterface
 {
     private $radius;
 
-    public function __construct($radius)
+    public function __construct(float $radius)
     {
         $this->radius = $radius;
     }
 
-    public function area()
+    public function area() : float
     {
         return pi() * ($this->radius * $this->radius);
     }
